@@ -1,0 +1,20 @@
+<h1>Characters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>House</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.name %></td>
+        <td><%= character.location %></td>
+        <td><%= character.house %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
